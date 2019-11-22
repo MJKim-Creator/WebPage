@@ -1,0 +1,75 @@
+<!doctype html>
+<html>
+	<meta charset = "utf-8"> <!-- 파일 저장 형식대로 파일 열기 -->
+	<head>
+		<title> MJ's Works - Projects </title>
+	</head>
+	<body>
+		<div id = "main-wrapper">
+			<div id = "nav-menu-wrapper">
+				<div id = "nav-menu-header">
+					<span><a href = "mjwork.html">MJ's Works</a></span>
+					<ul>
+						<li><a href = "about.html">About</a></li>
+						<li><a href = "projects.html">Projects</a></li>
+						<li><a href = "#">Interests</a></li>
+					</ul>
+				</div>
+				<div id = "nav-menu-big">
+					<h1><a href = "projects.html"> Projects </a></h1>
+				</div>
+			</div>
+
+			<div id = "content">
+				<div class = "box">
+					<span>뮤직<br>플레이어</span>
+				</div>
+				<div class = "paragraph">
+					<p>* 이 프로그램은 '자료구조' 수업에서 MJ가 작성한 내용입니다.
+
+					<p>옛날에 못난 버릇이 하나 있었는데, 제 스스로 생각하기에 제가 할 수 있는 것보다 완성도가 낮으면 부끄러워서  발표를 안 가곤 했습니다. 왜 이렇게 밖에 못 했냐는 말을 들으면 참을 수 없을 것 같아서 미리 포기해 버린거죠. 주어진 짧은 기간과 본인의 능력 안에서, 누구나 다 듣는 말이고 들을 수 있는 말이었는데도 말입니다. 지금은...내 능력이 여기까지밖에 안 된다는 걸 스스로 납득할 만큼 기간 안에 스스로를 갈아 붙입니다. (ㅎㅎ) 나쁘게 말하면 질척대는 것인데, 옛날이랑 비교하면 꽤 끈기 있는 방향으로 극복하지 않았나 생각합니다. 건강이 피폐해 지는 건 trade-off 겠지요.</p>
+
+					<p>절 이렇게 극복하게 만들어 준 수업 중에 하나가 자료구조입니다. 단순한 기존 뮤직플레이어를 '기능적 측면' 대신 '자료구조적 측면' 으로 생각해서 그 동안 배운 자료구조를 전부 때려넣어 프로그램을 만드는 게 수업 목표였는데, 괜히 이걸 비주얼한 프로그램으로 만들고 싶은 욕심에 일을 키웠습니다.</p>
+
+					<p>지금이야 이런 건 어렵지 않게 만든다지만 그 때엔 비주얼 프로그래밍에 대해 아무것도 모를 때라 꽤나 많은 시간을 써서 만들었던 기억이 있네요.</p>
+				</div>
+			</div>
+
+			<div id="footer">
+				<p>CONTENTS &copy; MJ KIM ALL RIGHTS RESERVED. </p>
+<!--폰트 미적용		<p>NOTE THAT THIS PAGE USES FONT NAME NANUM, WHICH RESERVED BY NAVER CORPORATION. (https://www.navercorp.com)</p> -->
+			</div>
+		</div>
+	</body>
+
+	<style>
+		*{margin:0; padding:0}
+		body{font-size:12px; color:#333}
+		ul{list-style: none}
+		a{color: #333; text-decoration: none; text-shadow: -.25px -.25px 0 transparent, .25px .25px transparent;}
+		a:hover{color: #333; text-shadow: -.25px -.25px 0 #333, .25px .25px #333;}
+
+		#main-wrapper {width:auto; margin: 0 auto; overflow: hidden}
+
+		#nav-menu-wrapper {width: auto; margin:0 auto; height: 400px; background: white; color: #696969;}
+
+		#nav-menu-header {height: 30px; font-size: 20px; padding: 1em; margin: 30px 1em 0px 1em; }
+		#nav-menu-header span {margin: 20px; display: inline-block; float:left;} 
+		#nav-menu-header li {margin:20px; display: inline-block; float: right;}
+
+		#nav-menu-big { height:300px; margin: 2em; border-top: 1px solid #ccc; border-bottom: 1px solid #ccc; padding:1em;}
+		#nav-menu-big h1{ font-size:80px; float: left; color:#404040; font-weight: bolder; margin: 130px auto auto 70px; display: block;}
+
+		#content { display:grid; grid-template-columns: auto auto; margin: 2em; padding: 10px; overflow: hidden; align-content: space-between;}
+		#content .box {  width:300px; border: 5px solid #333; background-color: #333; color:white; margin: 1em; display:inline-grid;}
+		#content .box span { font-size:50px; float: left; font-weight: bolder; margin: 0.5em 0.5em 5px 0.5em; display: block; align-self: flex-start;}
+		#content .box p {display: block; font-size: 14px; margin: 0 1.5em 1.5em 1.5em; float:left;}
+
+		#content .paragraph { width: 95%; color:#333; margin:1em; display:inline-grid;}
+		#content .paragraph p { display: block;font-size: 16px; float:left; margin: 1.5em;}
+
+		#footer {clear: both; border-top:1px solid #ccc; overflow:hidden; margin:2em;}
+		#footer p{font-size: 11px; text-align: center; margin: 15px 0}
+
+	</style>
+</html>

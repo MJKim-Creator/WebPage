@@ -1,0 +1,74 @@
+<!doctype html>
+<html>
+	<meta charset = "utf-8"> <!-- 파일 저장 형식대로 파일 열기 -->
+	<head>
+		<title> MJ's Works - Projects </title>
+	</head>
+	<body>
+		<div id = "main-wrapper">
+			<div id = "nav-menu-wrapper">
+				<div id = "nav-menu-header">
+					<span><a href = "mjwork.html">MJ's Works</a></span>
+					<ul>
+						<li><a href = "about.html">About</a></li>
+						<li><a href = "projects.html">Projects</a></li>
+						<li><a href = "#">Interests</a></li>
+					</ul>
+				</div>
+				<div id = "nav-menu-big">
+					<h1><a href = "projects.html"> Projects </a></h1>
+				</div>
+			</div>
+
+			<div id = "content">
+				<div class = "box">
+					<span>드론을<br>햅틱장비로<br>사용하기</span>
+				</div>
+				<div class = "paragraph">
+					<p>* 이 내용의 저작권은 MJ와 동료들에게 있으며, MJ는 이 논문의 VR부분을 작성했습니다.</p>
+					<p>이 아이디어는 간략하게 '드론을 햅틱 장비로 사용하자' 입니다. 드론에게 고정 위치의 포지셔닝을 요청하고, 드론 위를 누르면 드론이 원래 자리로 돌아가려고 저항합니다. 이 저항의 크기는 물건의 단단한 정도에 따라 달라지도록 구성해야겠죠. 반대로 드론 위에 달린 손잡이를 당기면, 다시 드론은 원래 자리로 돌아가려고 저항합니다. 이 저항의 크기는 물건의 무게에 따라 달라지도록 구성되어 있죠.</p>
+
+					<p>저는 코어 아이디어에 참여했다기 보다, 이 비디오 내에서의 'VR 연동'을 위한 코딩 파트에 참여했습니다. 드론의 위치를 실시간으로 OptiTrack을 통해 전달받고, 그 위치값에 따라 VR 물체가 이동하도록 프로그램을 구성하였습니다. 반대로 VR물체의 움직임에 따라 드론이 움직여야 하는 정도에 대한 정보를 전달하기도 했죠.</p>
+
+					<p>다시 생각해도 Calibration 과정이 이가 갈리네요. 코딩보다 더 오래 걸렸던 것 같습니다. 오히려 Calibration을 자동으로 할 수 있는 알고리즘을 찾는 방법을 알아내는 사람이 떼돈을 벌지 않을까 생각합니다.</p>
+				</div>
+			</div>
+
+			<div id="footer">
+				<p>CONTENTS &copy; MJ KIM ALL RIGHTS RESERVED. </p>
+<!--폰트 미적용		<p>NOTE THAT THIS PAGE USES FONT NAME NANUM, WHICH RESERVED BY NAVER CORPORATION. (https://www.navercorp.com)</p> -->
+			</div>
+		</div>
+	</body>
+
+	<style>
+		*{margin:0; padding:0}
+		body{font-size:12px; color:#333}
+		ul{list-style: none}
+		a{color: #333; text-decoration: none; text-shadow: -.25px -.25px 0 transparent, .25px .25px transparent;}
+		a:hover{color: #333; text-shadow: -.25px -.25px 0 #333, .25px .25px #333;}
+
+		#main-wrapper {width:auto; margin: 0 auto; overflow: hidden}
+
+		#nav-menu-wrapper {width: auto; margin:0 auto; height: 400px; background: white; color: #696969;}
+
+		#nav-menu-header {height: 30px; font-size: 20px; padding: 1em; margin: 30px 1em 0px 1em; }
+		#nav-menu-header span {margin: 20px; display: inline-block; float:left;} 
+		#nav-menu-header li {margin:20px; display: inline-block; float: right;}
+
+		#nav-menu-big { height:300px; margin: 2em; border-top: 1px solid #ccc; border-bottom: 1px solid #ccc; padding:1em;}
+		#nav-menu-big h1{ font-size:80px; float: left; color:#404040; font-weight: bolder; margin: 130px auto auto 70px; display: block;}
+
+		#content { display:grid; grid-template-columns: auto auto; margin: 2em; padding: 10px; overflow: hidden; align-content: space-between;}
+		#content .box {  width:300px; border: 5px solid #333; background-color: #333; color:white; margin: 1em; display:inline-grid;}
+		#content .box span { font-size:50px; float: left; font-weight: bolder; margin: 0.5em 0.5em 5px 0.5em; display: block; align-self: flex-start;}
+		#content .box p {display: block; font-size: 14px; margin: 0 1.5em 1.5em 1.5em; float:left;}
+
+		#content .paragraph { width: 95%; color:#333; margin:1em; display:inline-grid;}
+		#content .paragraph p { display: block;font-size: 16px; float:left; margin: 1.5em;}
+
+		#footer {clear: both; border-top:1px solid #ccc; overflow:hidden; margin:2em;}
+		#footer p{font-size: 11px; text-align: center; margin: 15px 0}
+
+	</style>
+</html>

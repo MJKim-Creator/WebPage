@@ -1,0 +1,80 @@
+<!doctype html>
+<html>
+	<meta charset = "utf-8"> <!-- 파일 저장 형식대로 파일 열기 -->
+	<head>
+		<title> MJ's Works - Projects </title>
+	</head>
+	<body>
+		<div id = "main-wrapper">
+			<div id = "nav-menu-wrapper">
+				<div id = "nav-menu-header">
+					<span><a href = "mjwork.html">MJ's Works</a></span>
+					<ul>
+						<li><a href = "about.html">About</a></li>
+						<li><a href = "projects.html">Projects</a></li>
+						<li><a href = "#">Interests</a></li>
+					</ul>
+				</div>
+				<div id = "nav-menu-big">
+					<h1><a href = "projects.html"> Projects </a></h1>
+				</div>
+			</div>
+
+			<div id = "content">
+				<div class = "box">
+					<span>색상의<br>촉각화</span>
+				</div>
+				<div class = "paragraph">
+					<p>* 이 논문 및 아이디어는 MJ와 동료들이 설계한 내용입니다.</p>
+					<p>햅틱스 연구실에 있을 당시 재미있게 생각한 주제 중 하나입니다. 교수님께서 이 주제를 학생에게 주시는 것을 두 번 목격했는데, 우연찮게 제가 이 학생들과 다 인연이 있어(ㅎㅎ) 결국 제가 두 번 다 도움을 주다가, 이 내용을 아는 게 저뿐이라 이래저래 논문까지 나오게 된 주제입니다.</p>
+
+					<p>첫 학생은 저와 함께 흑백 이미지에서 각 픽셀의 값에 따라 서로 다른 무게감을 느끼도록 하는 프로그램을 작성했습니다. 햅틱 장비 중 하나인 Falcon을 인터랙션에 사용하는 PC 프로그램이었지요. Falcon을 사용하기  위해  CHAI3D 오픈소스를 사용했습니다. 문서화도 아주 잘 되어있고 소스도 아주 깔끔한 친절 그 자체인 오픈소스입니다. (이걸 쓴 후에야 MIXARE가 뭔가 이상했었다는...생각을...크흠) Falcon의 포인터를 이미지 면 위에서 움직이면, 이미지의 진하고 연한 색감에 따라서 때론 울퉁불퉁함을, 때론 부드러움을 느낄 수 있도록 프로그램이 구성되었습니다.</p>
+
+					<p>두 번째 학생들은 흑백에서 더 나아가 색상을 표현하는 것에 대해 함께 고민했습니다. 이를 위해 HSI 컬러모델로 색을 분리하고, 기존 흑백 이미지에서의 기능은 유지하면서 또 다른 방식을 더해 색을 표현하고자 시도했지요. </p>
+
+					<p>처음엔 색상을 그냥 단순히 빛의 파동값을 이용해 표현하는 방법을 고려했지만, 그렇게 하면 명도와 다를 바 없게 되어서 난해하다는 쪽으로 의견이 모아져 포기했습니다. 후에 조금 더 복잡하게 생각해서 얻어낸 아이디어가, 색상에 사람들이 가진 감정을 촉감으로 표현하는 것은 어떨까 하는 것이었습니다. 다행히 색상-감정 간의 관계에 대해 고민한 연구 사례를 몇 개 찾아낼 수 있었고, 감정-주파수 간의 관계에 대한 연구 또한 찾을 수 있었습니다. 남은 건 셋을 연결해 주는 것 뿐이었죠.</p>
+
+					<p>사실 말도 안 되게 보이긴 합니다. 촉감~주파수~감정~색상 이렇게 멀리멀리 와 버렸으니 A는 B이고 B는 C이니 C는 D이며 그러니까 D는 A이다...이런 말도 안되는 수준의 가정의 나열이었으니까요. 게다가 각 관계에 대해 진행된 연구의 결과물들도 딱 이렇다 할 만한 연결고리를 찾은 게 아니었습니다. 실제로 저희도 에라 모르겠다, 이건 말도 안돼 (하지만 우린 시간도 없고 더는 떠오르는 것도 없으니 안 될꺼야) 하면서 진행했죠.</p>
+
+					<p>그런데 의외로...실험 결과가 저희의 예상만큼 최악은 아니었습니다. (!) 사실 왜 결과가 좋은지 이걸 좀 더 명확히 검증하면 진짜 논문이 될 테지만, 저흰 이쯤에서 마무리 지었습니다. 다시 생각해도 주제도, 결과도 재미있었던 것 같네요.</p>
+				</div>
+			</div>
+
+			<div id="footer">
+				<p>CONTENTS &copy; MJ KIM ALL RIGHTS RESERVED. </p>
+<!--폰트 미적용		<p>NOTE THAT THIS PAGE USES FONT NAME NANUM, WHICH RESERVED BY NAVER CORPORATION. (https://www.navercorp.com)</p> -->
+			</div>
+		</div>
+	</body>
+
+	<style>
+		*{margin:0; padding:0}
+		body{font-size:12px; color:#333}
+		ul{list-style: none}
+		a{color: #333; text-decoration: none; text-shadow: -.25px -.25px 0 transparent, .25px .25px transparent;}
+		a:hover{color: #333; text-shadow: -.25px -.25px 0 #333, .25px .25px #333;}
+
+		#main-wrapper {width:auto; margin: 0 auto; overflow: hidden}
+
+		#nav-menu-wrapper {width: auto; margin:0 auto; height: 400px; background: white; color: #696969;}
+
+		#nav-menu-header {height: 30px; font-size: 20px; padding: 1em; margin: 30px 1em 0px 1em; }
+		#nav-menu-header span {margin: 20px; display: inline-block; float:left;} 
+		#nav-menu-header li {margin:20px; display: inline-block; float: right;}
+
+		#nav-menu-big { height:300px; margin: 2em; border-top: 1px solid #ccc; border-bottom: 1px solid #ccc; padding:1em;}
+		#nav-menu-big h1{ font-size:80px; float: left; color:#404040; font-weight: bolder; margin: 130px auto auto 70px; display: block;}
+
+		#content { display:grid; grid-template-columns: auto auto; margin: 2em; padding: 10px; overflow: hidden; align-content: space-between;}
+		#content .box {  width:300px; border: 5px solid #333; background-color: #333; color:white; margin: 1em; display:inline-grid;}
+		#content .box span { font-size:50px; float: left; font-weight: bolder; margin: 0.5em 0.5em 5px 0.5em; display: block; align-self: flex-start;}
+		#content .box p {display: block; font-size: 14px; margin: 0 1.5em 1.5em 1.5em; float:left;}
+
+		#content .paragraph { width: 95%; color:#333; margin:1em; display:inline-grid;}
+		#content .paragraph p { display: block;font-size: 16px; float:left; margin: 1.5em;}
+
+		#footer {clear: both; border-top:1px solid #ccc; overflow:hidden; margin:2em;}
+		#footer p{font-size: 11px; text-align: center; margin: 15px 0}
+
+	</style>
+</html>

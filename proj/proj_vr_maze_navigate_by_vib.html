@@ -1,0 +1,76 @@
+<!doctype html>
+<html>
+	<meta charset = "utf-8"> <!-- 파일 저장 형식대로 파일 열기 -->
+	<head>
+		<title> MJ's Works - Projects </title>
+	</head>
+	<body>
+		<div id = "main-wrapper">
+			<div id = "nav-menu-wrapper">
+				<div id = "nav-menu-header">
+					<span><a href = "mjwork.html">MJ's Works</a></span>
+					<ul>
+						<li><a href = "about.html">About</a></li>
+						<li><a href = "projects.html">Projects</a></li>
+						<li><a href = "#">Interests</a></li>
+					</ul>
+				</div>
+				<div id = "nav-menu-big">
+					<h1><a href = "projects.html"> Projects </a></h1>
+				</div>
+			</div>
+
+			<div id = "content">
+				<div class = "box">
+					<span>진동<br>길찾기<br>네비게이션</span>
+				</div>
+				<div class = "paragraph">
+					<p>* 이 프로그램은 실시간 모바일 클라우드 연구센터가 참여한 '2017 ITRC 포럼'에서 MJ가 발표한 내용입니다.</p>
+					<p>미로 안에서의 진동 네비게이션 프로그램은 보이지 않는 벽으로 구성된 미로를 HMD에 달린 진동소자의 안내만으로 탈출하는 일종의 게임입니다. 별 대단한 것은 아니지만, 실험 측면에서 볼 때에는 여전히 가치가 있습니다. 저는 아직도 언젠가 HMD만 써도 매트릭스 같은 가상세계에 뿅 떨어지는 날이 오지 않을까 상상하곤 하는데, 이 가상세계에 대한 집중을 가장 방해하는 요소가 촉각이기 때문입니다.</p>
+
+					<p>프로그램의 구성 자체는 크게 복잡하지 않습니다만, 유니티 VR 어플리케이션 및 유니티 어플리케이션과 아두이노와의 블루투스 통신 등에 대한 내용을 처음 만들어 본 프로그램인지라 꽤나 고생했던 기억이 있습니다.</p>
+
+					<p>게다가 이 때 처음으로 마감에 쫓기며 완성도 있는 프로그램을 구현해야 한다는 책임감과 압박감에 시달렸습니다. 학과 수업이랑은 차원이 다르게 많은 사람들이 방문하는 행사였기에 일정 수준 이상의 완성도를 보여야만 했고, 직접 데모를 시연해야 했기에 부담감이 컸죠.</p> 
+
+					<p>아마도 이 때를 기점으로 목표를 완수하는 데 대한 뿌듯함과 희열을 느끼지 않았나 생각되네요. 거의 정신력으로 만든 프로그램입니다.</p>
+				</div>
+			</div>
+
+			<div id="footer">
+				<p>CONTENTS &copy; MJ KIM ALL RIGHTS RESERVED. </p>
+<!--폰트 미적용		<p>NOTE THAT THIS PAGE USES FONT NAME NANUM, WHICH RESERVED BY NAVER CORPORATION. (https://www.navercorp.com)</p> -->
+			</div>
+		</div>
+	</body>
+
+	<style>
+		*{margin:0; padding:0}
+		body{font-size:12px; color:#333}
+		ul{list-style: none}
+		a{color: #333; text-decoration: none; text-shadow: -.25px -.25px 0 transparent, .25px .25px transparent;}
+		a:hover{color: #333; text-shadow: -.25px -.25px 0 #333, .25px .25px #333;}
+
+		#main-wrapper {width:auto; margin: 0 auto; overflow: hidden}
+
+		#nav-menu-wrapper {width: auto; margin:0 auto; height: 400px; background: white; color: #696969;}
+
+		#nav-menu-header {height: 30px; font-size: 20px; padding: 1em; margin: 30px 1em 0px 1em; }
+		#nav-menu-header span {margin: 20px; display: inline-block; float:left;} 
+		#nav-menu-header li {margin:20px; display: inline-block; float: right;}
+
+		#nav-menu-big { height:300px; margin: 2em; border-top: 1px solid #ccc; border-bottom: 1px solid #ccc; padding:1em;}
+		#nav-menu-big h1{ font-size:80px; float: left; color:#404040; font-weight: bolder; margin: 130px auto auto 70px; display: block;}
+
+		#content { display:grid; grid-template-columns: auto auto; margin: 2em; padding: 10px; overflow: hidden; align-content: space-between;}
+		#content .box {  width:300px; border: 5px solid #333; background-color: #333; color:white; margin: 1em; display:inline-grid;}
+		#content .box span { font-size:50px; float: left; font-weight: bolder; margin: 0.5em 0.5em 5px 0.5em; display: block; align-self: flex-start;}
+		#content .box p {display: block; font-size: 14px; margin: 0 1.5em 1.5em 1.5em; float:left;}
+
+		#content .paragraph { width: 95%; color:#333; margin:1em; display:inline-grid;}
+		#content .paragraph p { display: block;font-size: 16px; float:left; margin: 1.5em;}
+
+		#footer {clear: both; border-top:1px solid #ccc; overflow:hidden; margin:2em;}
+		#footer p{font-size: 11px; text-align: center; margin: 15px 0}
+
+	</style>
+</html>

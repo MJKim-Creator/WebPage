@@ -1,0 +1,74 @@
+<!doctype html>
+<html>
+	<meta charset = "utf-8"> <!-- 파일 저장 형식대로 파일 열기 -->
+	<head>
+		<title> MJ's Works - Projects </title>
+	</head>
+	<body>
+		<div id = "main-wrapper">
+			<div id = "nav-menu-wrapper">
+				<div id = "nav-menu-header">
+					<span><a href = "mjwork.html">MJ's Works</a></span>
+					<ul>
+						<li><a href = "about.html">About</a></li>
+						<li><a href = "projects.html">Projects</a></li>
+						<li><a href = "#">Interests</a></li>
+					</ul>
+				</div>
+				<div id = "nav-menu-big">
+					<h1><a href = "projects.html"> Projects </a></h1>
+				</div>
+			</div>
+
+			<div id = "content">
+				<div class = "box">
+					<span>악수로<br>연락처를<br>교환하는<br>시스템</span>
+				</div>
+				<div class = "paragraph">
+					<p>* 이 아이디어는 '인간-컴퓨터 상호작용'수업에서 MJ와 동료들이 생각해 낸 내용입니다.</p>
+					<p>수업 내용이 '기존 컴퓨터와의 소통 방식인 키보드/마우스를 부셔버리자!' 였기 때문에, 새로운 인터랙션 방식을 고민하던 중 생각해 낸 방법입니다. 현실적으로는 많은 문제점이 있지만, 일단은 leap motion 장비를 통해 악수를 인식하여 번호를 교환하도록 하면 어떨까 정도의 구상으로 이루어졌습니다.</p>
+
+					<p>악수를 판단하는 방식도 아주 단순하게 구현했습니다. leap motion으로부터 두 손바닥의 위치를 구해서, 둘이 일정 이상 가까워 졌을 때, 그리고 두 손바닥이 마주 보고 있을 때 악수로 인식하도록 구현했는데, 도대체 손가락을 얼마나 무시하려고 그랬었나 하는 생각이 드네요.</p>
+
+					<p>완벽한 구현 자체보다는 시스템의 분석 방법 및 평가에 대해 더 깊이 있게 다룬 수업이었습니다. 시스템에 대한 시각을 다르게 가질 수 있어 굉장히 재미있었던 수업으로 기억합니다.</p>
+				</div>
+			</div>
+
+			<div id="footer">
+				<p>CONTENTS &copy; MJ KIM ALL RIGHTS RESERVED. </p>
+<!--폰트 미적용		<p>NOTE THAT THIS PAGE USES FONT NAME NANUM, WHICH RESERVED BY NAVER CORPORATION. (https://www.navercorp.com)</p> -->
+			</div>
+		</div>
+	</body>
+
+	<style>
+		*{margin:0; padding:0}
+		body{font-size:12px; color:#333}
+		ul{list-style: none}
+		a{color: #333; text-decoration: none; text-shadow: -.25px -.25px 0 transparent, .25px .25px transparent;}
+		a:hover{color: #333; text-shadow: -.25px -.25px 0 #333, .25px .25px #333;}
+
+		#main-wrapper {width:auto; margin: 0 auto; overflow: hidden}
+
+		#nav-menu-wrapper {width: auto; margin:0 auto; height: 400px; background: white; color: #696969;}
+
+		#nav-menu-header {height: 30px; font-size: 20px; padding: 1em; margin: 30px 1em 0px 1em; }
+		#nav-menu-header span {margin: 20px; display: inline-block; float:left;} 
+		#nav-menu-header li {margin:20px; display: inline-block; float: right;}
+
+		#nav-menu-big { height:300px; margin: 2em; border-top: 1px solid #ccc; border-bottom: 1px solid #ccc; padding:1em;}
+		#nav-menu-big h1{ font-size:80px; float: left; color:#404040; font-weight: bolder; margin: 130px auto auto 70px; display: block;}
+
+		#content { display:grid; grid-template-columns: auto auto; margin: 2em; padding: 10px; overflow: hidden; align-content: space-between;}
+		#content .box {  width:300px; border: 5px solid #333; background-color: #333; color:white; margin: 1em; display:inline-grid;}
+		#content .box span { font-size:50px; float: left; font-weight: bolder; margin: 0.5em 0.5em 5px 0.5em; display: block; align-self: flex-start;}
+		#content .box p {display: block; font-size: 14px; margin: 0 1.5em 1.5em 1.5em; float:left;}
+
+		#content .paragraph { width: 95%; color:#333; margin:1em; display:inline-grid;}
+		#content .paragraph p { display: block;font-size: 16px; float:left; margin: 1.5em;}
+
+		#footer {clear: both; border-top:1px solid #ccc; overflow:hidden; margin:2em;}
+		#footer p{font-size: 11px; text-align: center; margin: 15px 0}
+
+	</style>
+</html>

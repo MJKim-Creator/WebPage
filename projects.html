@@ -1,0 +1,121 @@
+<!doctype html>
+<html>
+	<meta charset = "utf-8"> <!-- 파일 저장 형식대로 파일 열기 -->
+	<head>
+		<title> MJ's Works - Projects </title>
+	</head>
+	<body>
+		<div id = "main-wrapper">
+			<div id = "nav-menu-wrapper">
+				<div id = "nav-menu-header">
+					<a href = "mjwork.html"><span>MJ's Works</span></a>
+					<ul>
+						<li><a href = "about.html">About</a></li>
+						<li><a href = "projects.html">Projects</a></li>
+						<li><a href = "#">Interests</a></li>
+					</ul>
+				</div>
+				<div id = "nav-menu-big">
+					<h1><a href = "projects.html"> Projects </a></h1>
+					<p></p>
+				</div>
+			</div>
+
+			<div id = "content">
+				<div class = "story">
+					<p>저는 아주 혁신적인 생각을 해 내거나, 프로그래밍을 매우 잘 하는 사람은 아닙니다. 느리지만 발전해 나가고, 여러 사람들과 서로 아는 것을 공유하며 배워 나가는 것을 즐기는 사람입니다. 잘 배운 것은 제 것을 만들어 10년이 지나도 잊지 않고 써먹는 사람입니다.</p> 
+					<p>이 페이지는 제가 그 동안 참여했던 제작과 아이디어에 대한 이야기를 다룹니다. 시간이 많이 지나 자료가 미비한 것들이 많습니다. 궁금하신 점은 mj.kim1102@gmail.com 로 메일을 보내 주시면 최대한 빠른 답변 드리도록 노력하겠습니다.</p>
+				<a href = "proj/proj_vib_flow_head.html">
+					<div class = "box">
+						<span>머리에서의 진동 흐름 촉각: 기초연구</span>
+						<p>Vibrotactile flow on the head: Initial study</p>
+					</div>
+				</a>
+				<a href = "proj/proj_color_representation_by_haptics.html">
+					<div class = "box">
+						<span>색상의 촉각화</span>
+						<p>Color representation by haptics - Falcon & C++</p>
+					</div>
+				</a>
+				<a href = "proj/proj_vr_maze_navigate_by_vib.html">				
+					<div class = "box">
+						<span>진동 길찾기 네비게이션</span>
+						<p>Navigator using vibration - Unity, Arduino & Bluetooth</p>
+					</div>
+				</a>
+				<a href = "proj/proj_render_haptic_effect.html">
+					<div class = "box">
+						<span>촉각전달 시스템</span>
+						<p>Haptic effect transmission system - Falcon, C++ & C++ server</p>
+					</div>
+				</a>
+				<a href = "proj/proj_drone_haptics_vr.html">
+					<div class = "box">
+						<span>드론을 햅틱장비로 사용하기</span>
+						<p>Using drone as a haptic device - Parrot AR Drone, Unity & Optitrack</p>
+					</div>
+				</a>
+				<a href = "proj/proj_ar_campus_navigator.html">
+					<div class = "box">
+						<span>AR 캠퍼스 안내 APP</span>
+						<p>AR campus guide application - Android & Mixare</p>
+					</div>
+				</a>
+				<a href = "proj/proj_leapmotion_handshake_catcher.html">
+					<div class = "box">
+						<span>악수로 연락처를 교환하는 시스템</span>
+						<p>Exchange contact number with handshaking - Leap motion & Java</p>
+					</div>
+				</a>
+				<a href = "proj/proj_campus_networking_simulation.html">
+					<div class = "box">
+						<span>교내 네트워크 구성 시뮬레이션</span>
+						<p>Campus network configration simulation - Packet tracer</p>
+					</div>
+				</a>
+				<a href = "proj/proj_music_player.html">
+					<div class = "box">
+						<span>뮤직 플레이어</span>
+						<p>Music file player - Windows programming</p>
+					</div>
+				</a>
+			</div>
+
+			<div id="footer">
+				<p>CONTENTS &copy; MJ KIM ALL RIGHTS RESERVED. </p>
+<!--미적용				<p>NOTE THAT THIS PAGE USES FONT NAME NANUM, WHICH RESERVED BY NAVER CORPORATION. (https://www.navercorp.com)</p> -->
+			</div>
+		</div>
+	</body>
+
+	<style>
+		*{margin:0; padding:0}
+		body{font-size:12px; color:#333}
+		ul{list-style: none}
+		a{color: #333; text-decoration: none; text-shadow: -.25px -.25px 0 transparent, .25px .25px transparent;}
+		a:hover{color: #333; text-shadow: -.25px -.25px 0 #333, .25px .25px #333;}
+
+		#main-wrapper {width:auto; margin: 0 auto; overflow: hidden}
+
+		#nav-menu-wrapper {width: auto; margin:0 auto; height: 400px; background: white; color: #696969;}
+
+		#nav-menu-header {height: 30px; font-size: 20px; padding: 1em; margin: 30px 1em 0px 1em; }
+		#nav-menu-header span {margin: 20px; display: inline-block; float:left;} 
+		#nav-menu-header li {margin:20px; display: inline-block; float: right;}
+
+		#nav-menu-big { height:300px; margin: 2em; border-top: 1px solid #ccc; border-bottom: 1px solid #ccc; padding:1em; }
+		#nav-menu-big h1{ font-size:80px; text-align: left; color:#404040; font-weight: bolder; margin: 130px auto auto 70px; }
+
+		#content { display:inline-grid; margin: 2em; padding: 10px; overflow: hidden; align-content: space-between;}
+		#content .story{ width:95%; margin: 1em; display: inline-grid;}
+		#content .story p{ display: block; font-size: 16px; float:left; margin:1.5em;}
+
+		#content .box {  width:95%; border: 5px solid #333; background-color: #333; color:white; margin: 1em; display:inline-grid; }
+		#content .box span { font-size:50px; float: left; font-weight: bolder; margin: 0.2em auto 5px 0.5em; display: block; align-self: flex-end;}
+		#content .box p {display: block; font-size: 20px; font-weight: bolder; margin: 0 auto 1em 1.5em; float:left;}
+
+		#footer {clear: both; border-top:1px solid #ccc; overflow:hidden; margin:2em;}
+		#footer p{font-size: 11px; text-align: center; margin: 15px 0}
+
+	</style>
+</html>
