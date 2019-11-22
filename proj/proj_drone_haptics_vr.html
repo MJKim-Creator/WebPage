@@ -31,6 +31,10 @@
 					<p>저는 코어 아이디어에 참여했다기 보다, 이 비디오 내에서의 'VR 연동'을 위한 코딩 파트에 참여했습니다. 드론의 위치를 실시간으로 OptiTrack을 통해 전달받고, 그 위치값에 따라 VR 물체가 이동하도록 프로그램을 구성하였습니다. 반대로 VR물체의 움직임에 따라 드론이 움직여야 하는 정도에 대한 정보를 전달하기도 했죠.</p>
 
 					<p>다시 생각해도 Calibration 과정이 이가 갈리네요. 코딩보다 더 오래 걸렸던 것 같습니다. 오히려 Calibration을 자동으로 할 수 있는 알고리즘을 찾는 방법을 알아내는 사람이 떼돈을 벌지 않을까 생각합니다.</p>
+					<div class = "info">
+						<span>PAPER</span><span><a href = "https://dl.acm.org/citation.cfm?id=3131821">https://dl.acm.org/citation.cfm?id=3131821</a></span>
+						<span>VIDEO</span><span><a href = "https://www.youtube.com/watch?v=KBDwNPUai2Q">https://www.youtube.com/watch?v=KBDwNPUai2Q</a></span>
+					</div>
 				</div>
 			</div>
 
@@ -66,6 +70,9 @@
 
 		#content .paragraph { width: 95%; color:#333; margin:1em; display:inline-grid;}
 		#content .paragraph p { display: block;font-size: 16px; float:left; margin: 1.5em;}
+
+		#content .paragraph .info {display:grid; grid-template-columns: 1fr 4fr}
+		#content .paragraph .info span {font-size: 18px; float: left; margin: 2em; display: block}
 
 		#footer {clear: both; border-top:1px solid #ccc; overflow:hidden; margin:2em;}
 		#footer p{font-size: 11px; text-align: center; margin: 15px 0}

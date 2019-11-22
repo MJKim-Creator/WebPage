@@ -22,17 +22,48 @@
 			</div>
 
 			<div id = "content">
-				<div class = "box">
-					<span>About</span>
-					<p>Talking about myself</p>
+				<div class = "story">
+					<p>이 페이지를 열게 된 계기는 모 기업의 지원서 작성 과정 중 발생했습니다. 늘상 요구하는 포트폴리오였는데도 이상하게 제 마음을 끌었습니다. 아마도 제게 불확실하던 문제를 해결해 주었기 때문이 아닌가 생각합니다. 저는 아직도 하나의 단어로 딱 떨어지는 직업을 갖고 싶은 마음을 가졌던 적이 없습니다. 백엔드도 재밌고, 프론트엔드도 재밌고, 서버도 재밌고, 제 손으로 만든 것이 사용 가능한 무언가로 나타나는 것은 무엇이든 재미있어 하고는 했습니다. 하지만 그 중에서도 가장 제 마음을 끌었던 것은 역시 Virtual Environment, VE를 만들기 위한 연구 및 개발입니다.</p>
+					<p>저는 아직도 그런 꿈을 꿉니다. 어렸을 적 봤던 만화영화에서나 일어나던 일들이 현실이 되는 것이 머지 않았고, 불가능하지 않다고 말입니다. 그런 환경을 구축하기 위한 문제는 많은 분야에 걸쳐 널려 있지만, 그 중에서도 저는 사용자와 시스템 간의 '대화'를 다루고 싶었습니다. 이런 인터랙션에 대한 고민이 하나 둘 모여 지금은 너무 당연시되는 스마트폰이 생겨나게 된 것이겠지요. </p>
+					<p>이렇게 오늘도 하나의 배움에 감사하면서 미루던 것들을 하나씩 해 나가고, 비어 있던 곳들을 채우고, 그 동안 뭘 해왔었는지 돌아보는 시간을 갖고자 열게 된 페이지입니다. 어제보단 오늘 조금 더 제가 꿈꾸던 미래가 다가왔길 바라며, 완전하진 않지만 저에겐 소소한 공부가 되었던 작업들에 대한 이야기를 들려 드리고자 합니다.</p>
+				<div class = "content-wrapper">
+					<div class = "box">
+						<span>Contact</span>
+					</div>
+					<div class = "info">
+						<span>NAME</span><span>김민지</span>
+						<span>CONTACT</span><span>mj.kim1102@gmail.com</span>
+					</div>
 				</div>
-				<div class = "box">
-					<span>Projects</span>
-					<p>Things that I've done</p>
+				<div class = "content-wrapper">
+					<div class = "box">
+						<span>Education</span>
+					</div>
+					<div class = "info">
+						<span>HIGH SCHOOL</span><span>선린인터넷고등학교 (2007.03 - 2010.02)</span>
+						<span>BACHELOR</span><span>경희대학교 (2010.03 - 2016.08)</span>
+						<span>MASTER</span><span>경희대학교 일반대학원 (2016.09 - 2018.08)</span>
+					</div>
 				</div>
-				<div class = "box">
-					<span>Interests</span>
-					<p>Programming skills, <br>books and psychology</p>
+				<div class = "content-wrapper">
+					<div class = "box">
+						<span>Interests</span>
+					</div>
+					<div class = "info-lined">
+						<span>Virtual Environments, Human-Computer Interaction & Psychology with VE</span>
+					</div>
+				</div>
+				<div class = "content-wrapper">
+					<div class = "box">
+						<span>Publications</span>
+					</div>
+					<div class = "info-lined">
+						<span>1. Muhammad Abdullah, <strong>Minji Kim</strong>, Waseem Hassan, Yoshihiro Kuroda and Seokhee Jeon, ”HapticDrone: An Encountered-Type Kinesthetic Haptic Interface with Controllable Force Feedback: Initial Example for 1D Haptic Feedback.” Adjunct Publication of the 30th Annual ACM Symposium on User Interface Software and Technology. ACM, 2017.</span>
+						<span>2. <strong>Minji Kim</strong>, Hwangil Kim, Hyenhee Jung, Seokhee Jeon, ”Colour to Haptics: Color Representation by Vibration”, Journal of Advanced Technology Research, Vol. 2, No. 1, June. 2017.</span>
+						<span>3. Muhammad Abdullah, <strong>Minji Kim</strong>, Waseem Hassan, Yoshihiro Kuroda and Seokhee Jeon, ”HapticDrone:An encountered-type kinesthetic haptic interface with controllable force feedback: Example of stiffness and weight rendering”, In Pro-ceedings of Haptics Symposium, 2018.</span>
+						<span>4. <strong>Minji Kim</strong>, Seokhee Jeon, ”Directional Information Perception on Head - Using Vibrotactile Phantom Sensation: Initial Study”, Korean Institute of Information Scientists and Engineers, Korea Computer Congress(KCC), 2018.</span>
+						<span>5. <strong>Minji Kim</strong>, Arsen Abdulali and Seckhee Jeon, ”Vibrotactile Flow Perception on Backside of the Head: InitialStudy”, IEEE Games, Entertainment and Media Conference(GEM),2018.</span>
+					</div>
 				</div>
 			</div>
 
@@ -61,10 +92,18 @@
 		#nav-menu-big { height:300px; margin: 2em; border-top: 1px solid #ccc; border-bottom: 1px solid #ccc; padding:1em; }
 		#nav-menu-big h1{ font-size:80px; text-align: left; color:#404040; font-weight: bolder; margin: 130px auto auto 70px; }
 
-		#content { display:grid; grid-template-columns: 1fr 1fr 1fr; margin: 2em; padding: 10px; overflow: hidden; align-content: space-between;}
-		#content .box {  width:95%; height:500px; border: 5px solid #333; background-color: #333; color:white; margin: 1em; display:inline-grid; }
-		#content .box span { font-size:50px; float: left; font-weight: bolder; margin: 0.5em auto 5px 0.5em; display: block; align-self: flex-end;}
-		#content .box p {display: block; font-size: 20px; font-weight: bolder; margin: 0 auto auto 1.5em; float:left;}
+		#content { display:inline-grid; margin: 2em; padding: 10px; overflow: hidden; align-content: space-between;}
+		#content .story{ width:95%; margin: 1em; display: inline-grid;}
+		#content .story p{ display: block; font-size: 16px; float:left; margin:1.5em;}
+
+		#content .content-wrapper {display: inline-grid; margin: 1em;}
+		#content .content-wrapper .box {  width:95%; border: 5px solid #333; background-color: #333; color:white; margin: 1em; display:inline-grid; }
+		#content .content-wrapper .box span { font-size:20px; float: left; font-weight: bold; margin: 1em; display: block;}
+
+		#content .content-wrapper .info {display:grid; grid-template-columns: 1fr 4fr}
+		#content .content-wrapper .info span {font-size: 18px; float: left; margin: 2em; display: block}
+		#content .content-wrapper .info-lined {display: inline-grid;}
+		#content .content-wrapper .info-lined span {font-size: 18px; float: left; margin: 2em; display: block}
 
 		#footer {clear: both; border-top:1px solid #ccc; overflow:hidden; margin:2em;}
 		#footer p{font-size: 11px; text-align: center; margin: 15px 0}
